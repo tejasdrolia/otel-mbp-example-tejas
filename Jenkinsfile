@@ -14,7 +14,7 @@ pipeline {
                         url: "https://registry.example.com/test-service:1.0.${env.BUILD_NUMBER}",
                         digest: "sha256:${UUID.randomUUID().toString().replace('-','')}",
                         label: 'test',
-                        componentId: 'REPLACE_WITH_COMPONENT_ID_FROM_CBP'
+                        componentId: 'XYZ'
                     )
                 }
             }
