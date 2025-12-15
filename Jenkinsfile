@@ -61,17 +61,8 @@ pipeline {
                           label: 'test',
                           componentId: 'REPLACE_WITH_COMPONENT_ID_FROM_CBP'  // ← IMPORTANT!
                       )
-                      echo "✓ Artifact registered with componentId"
-
-                      // Test 2: WITHOUT componentId (default behavior)
-                      registerBuildArtifactMetadata(
-                          name: "default-service-${env.BUILD_NUMBER}",
-                          version: "2.0.${env.BUILD_NUMBER}",
-                          type: 'maven'
-                      )
-                      echo "✓ Artifact registered with default component"
                   }
               }
-          }        
+          }
     }
 }
