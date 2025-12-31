@@ -30,7 +30,7 @@ pipeline {
                         url: "https://registry.example.com.in/test-service:1.0.${env.BUILD_NUMBER}",
                         digest: "sha256:${UUID.randomUUID().toString().replace('-','')}",
                         label: 'test1-with-comp',
-                        componentId: '4b2c42ef-6970-46ed-b911-b78b3ab91b6d'
+                        componentId: '4b2c42ef-6970-46ed-b911-b78b3ab91b6d-test'
                     )
                 }
             }
